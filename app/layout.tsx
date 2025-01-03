@@ -12,11 +12,11 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "CarePulse",
+  title: "Prime Prose Booking",
   description:
     "A healthcare patient management System designed to streamline patient registration, appointment scheduling, and medical records management for healthcare providers.",
   icons: {
-    icon: "/assets/icons/logo-icon.svg",
+    icon: "/assets/icons/logo.svg",
   },
 };
 
@@ -29,11 +29,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-dark-300 font-sans antialiased",
+          "min-h-screen bg-white font-sans antialiased",
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="light">
           {children}
         </ThemeProvider>
       </body>

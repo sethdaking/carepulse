@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { AppointmentForm } from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patient.actions";
@@ -11,7 +12,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/assets/icons/logo.svg"
             height={1000}
             width={1000}
             alt="logo"
@@ -24,7 +25,12 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             type="create"
           />
 
-          <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
+          <p className="copyright mt-10 py-12">
+            © 2025{" "}
+            <Link href="www.primeprosemedia.com" target="blank">
+              Prime Prose Media
+            </Link>
+          </p>
         </div>
       </section>
 
